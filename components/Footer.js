@@ -1,4 +1,5 @@
 'use client';
+import { Twitter, Instagram, Linkedin } from 'lucide-react';
 
 export default function Footer() {
     return (
@@ -17,9 +18,18 @@ export default function Footer() {
                 </div>
 
                 <div className="flex items-center gap-4">
-                    {['Twitter', 'Instagram', 'LinkedIn'].map(social => (
-                        <a key={social} href="#" className="text-white/40 hover:text-white transition-colors text-xs">{social}</a>
-                    ))}
+                    {[
+                        { name: 'Twitter', icon: Twitter, url: '#' },
+                        { name: 'Instagram', icon: Instagram, url: 'https://www.instagram.com/piyushgamer1111' },
+                        { name: 'LinkedIn', icon: Linkedin, url: '#' }
+                    ].map(social => {
+                        const Icon = social.icon;
+                        return (
+                            <a key={social.name} href={social.url} target={social.url !== '#' ? '_blank' : undefined} rel={social.url !== '#' ? 'noopener noreferrer' : undefined} className="text-white/40 hover:text-white transition-colors p-1" aria-label={social.name}>
+                                <Icon className="w-5 h-5" />
+                            </a>
+                        );
+                    })}
                 </div>
             </div>
         </footer>

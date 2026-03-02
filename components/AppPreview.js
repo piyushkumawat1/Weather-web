@@ -31,7 +31,7 @@ export default function AppPreview() {
                             <div className="w-6 h-6 bg-white rounded-full" /> /* Play Store Logo Placeholder */
                             <div className="text-left">
                                 <div className="text-[10px] uppercase tracking-wider opacity-70">Get it on</div>
-                                <div className="font-bold leading-none">Google Play</div>
+                                <div className="font-bold leading-none">Google 2Play</div>
                             </div>
                         </button>
                     </div>
