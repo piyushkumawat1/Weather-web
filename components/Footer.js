@@ -19,9 +19,9 @@ export default function Footer() {
 
                 <div className="flex items-center gap-4">
                     {[
-                        { name: 'Twitter', icon: Twitter, url: 'https://www.linkedin.com/in/piyush-kumawat1111' },
+                        { name: 'Twitter', icon: Twitter, url: '#' },
                         { name: 'Instagram', icon: Instagram, url: 'https://www.instagram.com/piyushgamer1111' },
-                        { name: 'LinkedIn', icon: Linkedin, url: '#' }
+                        { name: 'LinkedIn', icon: Linkedin, url: 'https://www.linkedin.com/in/piyush-kumawat1111' }
                     ].map(social => {
                         const Icon = social.icon;
                         return (
