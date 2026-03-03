@@ -30,7 +30,7 @@ export default function DownloadSection() {
                         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                             <button className="h-14 bg-white text-black px-8 rounded-full font-bold flex items-center gap-3 hover:scale-105 active:scale-95 transition-all duration-300 shadow-xl shadow-white/10 group/btn hover:ring-4 hover:ring-white/30">
                                 <Apple className="w-6 h-6 group-hover/btn:-mt-1 transition-transform" />
-                                <span className="text-lg">App Store</span>
+                                <span className="text-lg" alert="It will coming soon">App Store</span>
                             </button>
                             <button className="h-14 bg-black/50 backdrop-blur-md border border-white/20 text-white px-8 rounded-full font-bold flex items-center gap-3 hover:bg-white/10 hover:border-white/40 transition-all duration-300 text-lg hover:scale-105 active:scale-95 hover:shadow-lg hover:shadow-black/20">
                                 <Play className="w-5 h-5 fill-current" />
